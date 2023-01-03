@@ -6,14 +6,14 @@ import time
 def choice():
     global n
     print('''
-    How many digits do you want in your password?
+    How many digits do you want in your password? (7-50)
     ''')
     n = int(input(": "))
-    if n >=200 :
-        print("Too big. Try a smaller number")
+    if n >50 :
+        print("Too big. (7-50)")
         choice()
-    elif n <= 5:
-        print("Too Small. Try a bigger number")
+    elif n < 7:
+        print("Too Small. (7-50)")
         choice()
     else:
         config()
