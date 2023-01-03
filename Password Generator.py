@@ -6,7 +6,7 @@ import time
 def choice():
     global n
     print('''
-    How much digits do you want in your password (Including digits!)
+    How many digits do you want in your password?
     ''')
     n = int(input(": "))
     if n >=200 :
